@@ -62,6 +62,29 @@ These terms have been renamed in the codebase but may appear under old names:
 - **chrome-extension** — Chrome browser extension
 - **figmatoreact** — Component library prototype (`https://github.com/chris-lawbrokr/figmatoreact`)
 
+## Diagrams
+
+When creating diagrams or charts in this vault, always use **Mermaid** syntax embedded in markdown files. Never use `.canvas`, `.drawio`, `.d2`, or other diagram formats.
+
+**Rules:**
+- Embed diagrams as fenced `mermaid` code blocks inside `.md` files
+- Use descriptive headings above each diagram
+- Supported diagram types: `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`, `erDiagram`, `gantt`, `pie`, `flowchart`, etc.
+- Preview in VS Code with the `bierner.markdown-mermaid` extension (`Cmd+Shift+V`)
+- Mermaid also renders natively on GitHub
+
+**Example:**
+````
+```mermaid
+graph LR
+    Start -->|path 1| Process_A[Process A]
+    Start -->|path 2| Process_B[Process B]
+    Process_A --> Merge
+    Process_B --> Merge
+    Merge -->|done| End
+```
+````
+
 ## How to Use This Vault
 
 1. **Start here** — this file gives you the full map
