@@ -1,0 +1,11 @@
+# Credentials and secrets - NEVER commit
+credentials/
+*.env
+
+# Obsidian internals
+.obsidian/
+.trash/
+
+# OS files
+.DS_Store
+Thumbs.db
