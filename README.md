@@ -1,6 +1,7 @@
 # Lawbrokr Engineering Vault
 
 An [Obsidian](https://obsidian.md) vault that serves as an LLM-readable knowledge base for the Lawbrokr product ecosystem. It provides AI coding assistants with full context on active projects, architecture decisions, and workflow notes.
+
 ## Vault Structure
 
 ```
@@ -36,4 +37,3 @@ These terms have been renamed in the codebase but may appear under old names:
 | Funnel           | Campaign  | Multi-step lead capture flow      |
 | Workflow         | Journey   | Automated lead follow-up sequence |
 | Marketing Source | Source    | Where a lead came from            |
-
