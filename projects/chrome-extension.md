@@ -108,3 +108,17 @@ See the `x -` items: all formatting, table components, caching, notifications, l
 
 ## Related Files
 - [[storefront]] — Rails backend the extension connects to
+
+---
+
+Change button from "Add Response" to "Create Lead" in chrome extension
+
+Change big button on home page from "Add New Funnel" to "Add Manual Response"
+
+Update responses button to say "+ Add Manual Response" same text as in chrome extension
+
+Move "Search Responses" on the same line as actions, sort by, and filters. Keep "+ Add Manual Response" button in the top right corner
+
+
+
+
