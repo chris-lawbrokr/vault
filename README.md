@@ -11,7 +11,8 @@ vault/
 │   ├── storefront.md
 │   ├── justice-sync.md
 │   ├── justice-frontend.md
-│   └── chrome-extension.md
+│   ├── chrome-extension.md
+│   └── internal-dashboard-api.md
 ├── reference/             ← How-to guides and command references
 │   ├── rails-commands.md
 │   ├── sidekiq.md

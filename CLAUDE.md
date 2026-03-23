@@ -27,7 +27,8 @@ vault/
 │   ├── justice-sync.md        ← Justice backend: full API, schema, AI agent docs
 │   ├── justice-frontend.md    ← Justice frontend: features, routes, components
 │   ├── chrome-extension.md    ← Chrome ext: architecture, modal persistence, task log
-│   └── storefront.md         ← Rails app: controllers, models, auth, architecture
+│   ├── storefront.md         ← Rails app: controllers, models, auth, architecture
+│   └── internal-dashboard-api.md ← Internal dashboard API documentation
 ├── reference/
 │   ├── rails-commands.md      ← How to run/develop the Rails app locally
 │   ├── sidekiq.md             ← Sidekiq background job notes
