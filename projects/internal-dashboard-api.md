@@ -352,7 +352,7 @@ Daily visits and conversions. Every day in range included (zeros for days with n
 
 ## Notes
 
-- See [internal-dashboard.md](../features/internal-dashboard.md) for Figma designs
+- See [internal-dashboard.md](internal-dashboard.md) for Figma designs
 - Terminology: "Funnel" = Campaign, "Workflow" = Journey, "Marketing Source" = Source
 - Legacy endpoints use integer IDs; v1 endpoints use UUIDs
 - The `X-Switch-LawFirm` header allows admin users to operate in another law firm's context
