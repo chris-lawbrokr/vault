@@ -1,11 +1,17 @@
 # Rails Commands — Storefront
 
 ## Start Dev Server
+
 ```bash
 bin/dev
 ```
 
+```bash
+direnv allow 
+```
+
 ## Access Local App
+
 ```
 https://app.lvh.me:3443/
 ```

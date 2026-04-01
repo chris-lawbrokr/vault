@@ -15,7 +15,7 @@ This documentation covers all internal API endpoints, authentication flows, and 
 
 ## Quick Links
 
-- [Authentication](/authentication) — How to obtain and use access tokens
+- [Authentication](Authentication.md) — How to obtain and use access tokens
 - [Token Refresh](/token-refresh) — How the refresh token flow works
 - [Error Handling](/error-handling) — Standard error response format and codes
 - [Rate Limiting](/rate-limiting) — Request rate limits and throttling behavior

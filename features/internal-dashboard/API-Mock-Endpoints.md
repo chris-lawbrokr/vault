@@ -1,5 +1,3 @@
-# API Mock Endpoints
-
 ## /admin/analytics/summary?law_firm_id=...
 
 Returns visits and conversion analytics summary, month over month results, and daily counts for sparklines.
