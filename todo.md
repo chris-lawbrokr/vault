@@ -4,5 +4,5 @@ popup overlay
 sms agent
 dummy page with scraper
 
-
-voice agent
+text 
+drip campaigns

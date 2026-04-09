@@ -1,10 +1,12 @@
-### Date Picker Component
-https://www.figma.com/design/ytwwKKmfeKrzuXi3Fs3WYP/Lawbrokr-Redesign-%7C-2026?node-id=14188-66955&p=f&m=dev
-## Notes
+1. For the sparklines they should look better now, they'll match the data and how it's aggregated for the chart, so if you do 90 days it should be a lot smoother now.
+
+2. I've set the access token expiry to now be 15 minutes, so you can do a refresh less frequently now. The main token will expire after 1 day, for production it will be 30 days.
+
+3. I've implemented more API endpoints, the main one being the performance comparison chart using route `admin/account/performance/chart` that will now work and return live data from staging database.
+
+
+
 
 ---
 
-x - date default set to 90 days 
-x - must have a start and end date
-x - clear button defaults to 90 days
-x - calendar limit 2024 to current day 
+mobile menu height
