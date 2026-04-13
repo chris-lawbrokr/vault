@@ -6,21 +6,21 @@ Internal partner management tool replacing FirstPromoter. Tracks referral deals,
 
 ## Tech Stack
 
-| Layer | Choice |
-|-------|--------|
-| Framework | Next.js 15 (App Router) |
-| Hosting | Vercel |
-| Database | Neon (Serverless Postgres) |
-| Auth | Auth.js (NextAuth v5) + Neon adapter |
-| UI | shadcn/ui + Tailwind CSS 4 |
-| ORM | Drizzle (Neon's recommended ORM) |
+| Layer     | Choice                               |
+| --------- | ------------------------------------ |
+| Framework | Next.js 15 (App Router)              |
+| Hosting   | Vercel                               |
+| Database  | Neon (Serverless Postgres)           |
+| Auth      | Auth.js (NextAuth v5) + Neon adapter |
+| UI        | shadcn/ui + Tailwind CSS 4           |
+| ORM       | Drizzle (Neon's recommended ORM)     |
 
 ## Roles & Access
 
-| Role | Access |
-|------|--------|
-| **Admin** | Full dashboard, partner management, deal pipeline, commission ledger, create invite links |
-| **Partner** | Personal dashboard, submit deals, view own commissions/payouts, manage payout details |
+| Role        | Access                                                                                    |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| **Admin**   | Full dashboard, partner management, deal pipeline, commission ledger, create invite links |
+| **Partner** | Personal dashboard, submit deals, view own commissions/payouts, manage payout details     |
 
 ---
 
@@ -173,6 +173,7 @@ app/
 ## Phase Plan
 
 ### Phase 1 — Foundation
+
 - [ ] Project setup: Next.js + Neon + Auth.js + Drizzle + shadcn
 - [ ] Auth flow: magic link login, role-based sessions
 - [ ] DB schema + migrations
@@ -180,18 +181,21 @@ app/
 - [ ] Partner: signup via invite link, onboarding
 
 ### Phase 2 — Core Tracking
+
 - [ ] Partner: submit deals form
 - [ ] Admin: deal pipeline view (table + status management)
 - [ ] Commission auto-calculation on deal close
 - [ ] Admin: commission ledger, mark as paid
 
 ### Phase 3 — Dashboards & Polish
+
 - [ ] Admin dashboard with summary stats
 - [ ] Partner dashboard with personal stats
 - [ ] Partner: payout details (encrypted storage)
 - [ ] Referral log / activity feed
 
 ### Phase 4 — Future (Post-MVP)
+
 - [ ] Referral link click tracking (pixel/redirect)
 - [ ] Email notifications (deal status changes, commission paid)
 - [ ] CSV export for accounting
