@@ -1,8 +1,7 @@
-internal dashboard
-justice ai
-popup overlay
-sms agent
-dummy page with scraper
+**Dummy law firm website page**
 
-text 
-drip campaigns
+Chloe stats - pull integrations
+
+Analytic
+Justrice beta
+Text messaging
