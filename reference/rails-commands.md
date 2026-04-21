@@ -7,7 +7,7 @@ bin/dev
 ```
 
 ```bash
-direnv allow 
+direnv allow
 ```
 
 ## Access Local App
