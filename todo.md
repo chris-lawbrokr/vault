@@ -1,47 +1,37 @@
-Text messaging SMS
+
+Internal dash - account management tab
 Justrice beta
+Popups
+
+Text messaging SMS
+
+
+---
 
 ROI Attribution
 Chloe stats - pull integrations - ROI card in analytics page
 
-Internal das
-
-Lawbrokr lead magnet - capture lead details from existing landing page forms
-**ai magic optimization**
+Lawbrokr lead magnet - capture lead details from existing landing page forms **ai magic optimization**
 
 ---
 
-~~The following is all feedback for the partners dashboard based on a review of the platform, see the following details below:~~
+The following are enhancements that can be made to improve popups and also ensure that it has analytics so that it can support tracking detailed analytics.
 
-1. ~~Add support for new partner invites to send them an email with a link to open to join the platform.~~
+1. Add support for all of the CTA buttons in the popups (ignoring those for closing it) to append to the URL the engaged_popup parameter with the popup identifier. This allows for tracking views and conversions and attributing it to the popup.
     
-    1. ~~Keep the invite link still, but update the text in the dashboard to mention that an email invite has been sent, but you can still share the invite link created as well.~~
-    2. ~~It's likely customers won't bother to check their email so it's useful to have that direct invite link to send them manually if the partner forgets to join.~~
+    1. For reference look at the clips.js implementation there is an `appendEngagedClipParam` function, you want to add a similar function for all of the popup CTA buttons to include as part of the URL the engaged_popup parameter and set the popup id
+    2. For clips the token is the clip that is specified, this would be the same for popups where there can be a `popup` defined OR alternatively if none is defined then the Rails API will make a best effort to determine the default configured popup and will regardless return the `popup` as part of the response. For testing purposes if you want to update your Mock API to return the popup you can include in the JSON payload `"popup": "popup_69b8ffaed7bb57f394fad11f98a52945"`
     
-2. ~~On the signup page the Affiliate terms and conditions doesn't link to anything right now.~~
+2. By default if no popup is provided to the Rails API then it will attempt to determine the default popup configured for the law firm. You need to also add support where if a user explicitly configures the popup then that is used and provided to the API url. You can look at Clips and mimic the implementation for the API request as it would be the same for Pop Ups except Pop Ups attempts to return the default popup for the firm if none is provided.
+    1. The following is an example configuration where a popup is explicitly provided, like how clips is done:
 
-3. ~~After signing up for the Account created page update it to match the style of Lawbrokr, the sign up page looks great so this could be made to match that or look similar.~~
+<script>
+    window.LawbrokrConfig = {
+        popup: 'popup_69b8ffaed7bb57f394fad11f98a52945'
+    };
+</script>
 
-4. ~~For the partners dashboard page review and confirm if "30 days for next payment" should be kept, or likely if it should just be removed and then total unpaid and total paid cards can just be widened.~~
-
-5. ~~The following is feedback for the edit payment details:~~
-    
-    1. ~~For edit payout method make it so that both the account number and routing/aba number are all visible and not password fields.~~
-    2. ~~For the address details change the ordering to the following:~~
-        1. ~~Address~~
-        2. ~~City | State / Province (can keep both on same line)~~
-        3. ~~Zip / Postal Code~~
-        4. ~~Country (keep US as default)~~
-    3. Try incorporating Google Maps via Next/NPM package, you can use the existing maps api key and then when they go to fill in address it can auto-fill the rest of the details. This should be built in as part of flowbite if not there's likely a great npm package for this.
-    
-6. ~~After they've added their payment details After keep account and routing number visible instead of treating it like a password.~~
-
-7. ~~Referrals Kanban Board~~
-    
-    1. ~~Add something like a faint purple badge/border around the top row which when clicked opens up the details, which makes it a much larger target to click. Keep the "Unpaid" and "Paid" badges so it's clearly visible still.~~
-    
-    2. ~~For cards in "Closed Won" change the "Save" button to"Mark as Paid". Because marking as paid is a big deal given customers get email notifications, when clicking the button have another popup that's very obvious which gives all the details, such as who is getting paid, the commission type, and the amount being paid. Only if "Confirm" is clicked then save it as paid, have the "Cancel" button so it's easy to cancel if there's a mistake.~~
-    
-    3. ~~After moving a deal to "Closed Won" the card should have a button above "Mark as Paid" that says "View Banking Details" which makes it easy to view it. For the current payment row above that has a small button right now, that should simply show a badge that says "Unpaid" or if already paid a "Paid" green badge. This should also apply to the kanban board, if something is already paid in "Closed Won" column it should display "Paid" with the green badge, similar to how it right now has "Unpaid" with a yellow badge.~~
-    
-    4. ~~Once something is paid lock it in the kanban so it can't be modified or moved to a different state. If and already paid deal is clicked in the kanban board then the "Mark as Paid" button should be disabled so it cannot accidentally be marked as paid again.~~
+1. Add support for robust defaults to ensure a default popup is displayed if a user forgets to configure styles/fonts/colors for it.
+    1. First look at the code for Clips for making the API request and ensure that for Pop Ups it's similar and handles performing the API requests and retrying on error and dealing with delayed initialization and other common challenges when operating in different website platform environments.
+    2. Add support for a set of defaults that can be used if a user has not configured them for the Pop Ups, these should make the defaults match the first pop up theme (black and white theme) so that even if a user does not configure it and many fields are null the default pop up will still look good.
+    3. NOTE: There are many cases where a user will not have a popup configured, similarly to how Clips is implemented, if no Popup is configured then there will be a `204` error code returned see the Clips implementation in `fetchClipDetails` for reference, you will want to stop retrying and not render the Popup as there has not been any configured.
