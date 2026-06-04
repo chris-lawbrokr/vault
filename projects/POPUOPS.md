@@ -65,4 +65,3 @@ Open
 ```
 http://testing.localhost/test/test-popup-api.html?gclid=test123
 ```
-
