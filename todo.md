@@ -1,8 +1,3 @@
-
-Internal dash - account management tab
-Justrice beta
-Popups
-
 Text messaging SMS
 
 ---
