@@ -65,3 +65,23 @@ Open
 ```
 http://testing.localhost/test/test-popup-api.html?gclid=test123
 ```
+
+---
+
+06092026 - Investigate pop ups issues notes
+
+https://app.clickup.com/t/9003176642/86e1rtdmx
+
+Honeybadger error noise reduction - clip configuration errors
+These config cases now `console.warn` locally instead of reporting to Honeybadger:
+- `src/clips.js` - missing `video_url` warns and throws without calling `reportError`
+- `src/clips.js` - a 204 (No Content) response throws "Clip has no content" without reporting
+- `src/lawbrokr.js` - the clip init `.catch()` skips `reportError` when the error
+message is a known config issue ("Clip has no content" / "Clip has no video URL")
+
+HLS errors
+- `src/clips.js` - the HLS `ERROR` handler (`data.fatal` branch) warns instead of
+calling `reportError`; the network/media recovery logic is unchanged
+
+
+
