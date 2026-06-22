@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"7bc8628a047d8d31","type":"text","text":"conversion intelligence\nwhat cliont built for razor law\n\nconversion intelligence - custom chatbot type style\n\nmaps widget\ncalling widget\n\npractice area widget\nimage widget\n\npayment widget\nscheduling (calandly) widget\nclient portal widget\nsocial media widget\n\n","x":-780,"y":-280,"width":632,"height":547},
+		{"id":"01701cb27b281144","type":"text","text":"boxii \nchris@lawbrokr.com\nmzt.rgu5hwd!URW*jhf","x":-1720,"y":-553,"width":440,"height":547},
+		{"id":"b8365508b9123c58","x":-1653,"y":460,"width":1189,"height":280,"type":"text","text":"|Module|Type|Description||\n|---|---|---|---|\n|Template builder|Base product|Drag-and-drop layout builder — the core Boxii experience||\n|Analytics hub|Included|Aggregates behavioral and conversion data across all active modules||\n|**Conversion intelligence**|Add-on|Embedded Claude AI experience for intake and pre-qualification. Lawbrokr’s original product, rebuilt.|Comes with “Contact Management, automations”|\n|**Navigational intelligence**|Add-on|Guides visitors through the site and captures behavioral signals||\n|**AI Readiness**|Add-on|Surface on AI tools||\n\n\n"},
+		{"id":"1c92e4783ccce11a","x":-1653,"y":760,"width":1189,"height":440,"type":"text","text":"Template builder (Drag-and-drop layout builder)\nAnalytics hub (customer analytics dashboard)\nConversion intelligence (question funnel)\nNavigational intelligence (Links)\nAI Readiness (ai chat / ai search)\n\n---\n\nTemplate builder (Drag-and-drop layout builder)\nAnalytics hub (customer analytics dashboard)\nConversion intelligence (Links)\nNavigational intelligence (Links)\nAI Readiness (ai chat / ai search)\n\n"},
+		{"id":"833314f6d9a29dce","x":-1653,"y":1480,"width":250,"height":60,"type":"text","text":"Login"},
+		{"id":"d129115a2cfa8398","x":-1360,"y":1380,"width":250,"height":260,"type":"text","text":"Create Project\n\n-  Input brand details\n- scrape site \n- complete AI onboard conversation"},
+		{"id":"033db31c27a148ed","x":-1058,"y":1380,"width":250,"height":260,"type":"text","text":"Create Overlay\n\n- drag and drop design overlay based on pulled details"}
+	],
+	"edges":[
+		{"id":"ad9d9d1484242c7a","fromNode":"833314f6d9a29dce","fromSide":"right","toNode":"d129115a2cfa8398","toSide":"left"},
+		{"id":"b599c7ad252978e6","fromNode":"d129115a2cfa8398","fromSide":"right","toNode":"033db31c27a148ed","toSide":"left"}
+	]
+}
