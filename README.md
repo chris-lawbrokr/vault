@@ -38,3 +38,5 @@ These terms have been renamed in the codebase but may appear under old names:
 | Funnel           | Campaign  | Multi-step lead capture flow      |
 | Workflow         | Journey   | Automated lead follow-up sequence |
 | Marketing Source | Source    | Where a lead came from            |
+| Marketing Source | Source    | Where a lead came from            |
+| Marketing Source | Source    | Where a lead came from            |
