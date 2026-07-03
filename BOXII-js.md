@@ -25,6 +25,10 @@ theresn an image upload delay
 base url 
 https://cdn.lawbrokr.com/img/mycroft/bg.webp
 
+https://cdn.lawbrokr.com/img/lawbrokr/partners/alh-law-group.webp
+
+https://cdn.lawbrokr.com/img/
+
 
 ---
 
@@ -64,4 +68,4 @@ Its very important that after you have completed your changes you perform the in
 
 ---
 
-[No thanks, just browsing!
+for posthog analytics create unique labels for each cta or any link
