@@ -61,3 +61,7 @@ I found an issue with the mycroft boxii instance when testing. The testimonial w
 Please carefully review my instructions and ask me questions before proceeding to make sure you have a complete understanding of the task.
 
 Its very important that after you have completed your changes you perform the integration tests and make user that your changes work correctly on the different integration sites.
+
+---
+
+[No thanks, just browsing!
