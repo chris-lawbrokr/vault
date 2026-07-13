@@ -23,7 +23,9 @@ https://cdn.lawbrokr.com/img/logo.svg
 theresn an image upload delay
 
 base url 
-https://cdn.lawbrokr.com/img/mycroft/bg.webp
+https://cdn.lawbrokr.com/img/mycroft/mycroft-logo.svg
+
+[mycroft-logo.svg](https://us-east-1.console.aws.amazon.com/s3/object/cdn-lawbrokr?region=us-east-1&prefix=img/mycroft/mycroft-logo.svg)
 
 https://cdn.lawbrokr.com/img/lawbrokr/partners/alh-law-group.webp
 
