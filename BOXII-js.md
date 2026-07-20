@@ -71,3 +71,83 @@ Its very important that after you have completed your changes you perform the in
 ---
 
 for posthog analytics create unique labels for each cta or any link
+
+---
+
+---
+
+  
+
+```bash
+
+npm run integration
+
+```
+
+  
+
+```bash
+
+https://wordpress.localhost:8443/
+
+```
+
+  
+
+```bash
+
+https://plain.localhost:8443/
+
+```
+
+  
+
+```bash
+
+https://plain-lawbrokr.localhost:8443/
+
+```
+
+  
+
+---
+
+  
+
+if adding charts or othwer dependencies do not add to the main project package.json
+
+instead just use a cdn like jsdeliver (https://www.jsdelivr.com/) to grab the direct link to it and add it to the index.html
+
+  
+
+dont try to make it use existing tailwind or dashboard
+
+have it match minimal boxii lawbrokr theme
+
+  
+
+must run to generate report
+
+  
+
+```bash
+
+npm run report:analytics
+
+```
+
+  
+
+must run to view report
+
+  
+
+```bash
+
+npm run report:analytics:view
+
+```
+
+  
+
+IF CLAUDE IS WORKING ON THIS ALWAYS INTRUCT CLAUDE TO USE THE PLAYWRIGHT BROWSER TO INSPECT IN THE REAL BROWSER
