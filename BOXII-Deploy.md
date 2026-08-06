@@ -1,4 +1,3 @@
-
 https://github.com/lawbrokr/boxii-js/releases
 
 1. create new release 
@@ -21,4 +20,9 @@ https://cdn.lawbrokr.com/js/latest/boxii.min.js
 ```
 // add to the <head> element
 <script src="https://cdn.lawbrokr.com/js/latest/boxii.min.js" data-site-id="mycroft"></script>
+```
+
+```
+// add to the <head> element
+<script src="https://cdn.lawbrokr.com/js/latest/boxii.min.js" data-site-id="laiturner"></script>
 ```
