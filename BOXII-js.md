@@ -8,7 +8,11 @@ https://us.posthog.com/login
 
 AWS
 
-adding image content to S3 at this bucket https://us-east-1.console.aws.amazon.com/s3/buckets/cdn-lawbrokr?region=us-east-1&tab=objects
+adding image content to S3 at this bucket 
+
+```bash
+https://us-east-1.console.aws.amazon.com/s3/buckets/cdn-lawbrokr?region=us-east-1&tab=objects
+```
 
 then go inside img folder
 cretae neew folder for customer if it doesnt exist (all lowercase)
