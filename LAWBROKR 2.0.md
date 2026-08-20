@@ -1,13 +1,6 @@
 ---
 
 ---
-
-## Lawbrokr 2.0
-
-one page has one funnel
-
-one funnel has many workflows dynamiclaly ordered
-
 ---
 
 Internal Dashboard updates
@@ -23,3 +16,31 @@ Internal Dashboard updates
 - dashboaard leaderboard add function to edit/remove mailchimp tags form weithin the dashboard (inactive vs active is the priority)
 
 - all contacts should be added in hupspot based on email campaigns
+
+---
+## Lawbrokr 2.0
+
+one page has one funnel
+
+one funnel has many workflows dynamiclaly ordered
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

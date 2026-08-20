@@ -31,3 +31,11 @@ https://cdn.lawbrokr.com/js/latest/boxii.min.js
 // add to the <head> element
 <script src="https://cdn.lawbrokr.com/js/latest/boxii.min.js" data-site-id="merel"></script>
 ```
+
+```
+// add to the <head> element
+<script src="https://cdn.lawbrokr.com/js/latest/boxii.min.js" data-site-id="cnytriallaw"></script>
+```
+
+
+https://plain-cnytriallaw.localhost:8443/
